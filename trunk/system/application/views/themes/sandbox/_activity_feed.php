@@ -1,4 +1,4 @@
-<?php $this->lang->load('activity'); ?>
+<?php $this->lang->load('lifepress'); ?>
 
 <div id="main_container">
 

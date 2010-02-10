@@ -1,4 +1,4 @@
-<?php $this->lang->load('sidebar'); ?>
+<?php $this->lang->load('lifepress'); ?>
 
 <div id="sidebar_container">
 
