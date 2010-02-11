@@ -1,7 +1,9 @@
+<?php $this->lang->load('lifepress'); ?>
+
 <div id="main_container">
 
 <div id="single_container">
-	<p class="site_info" style="background: transparent url(<?php echo $item->get_feed_icon()?>) 0 center no-repeat">I posted to <?php echo $item->get_feed_domain()?></p>
+	<p class="site_info" style="background: transparent url(<?php echo $item->get_feed_icon()?>) 0 center no-repeat"><?php echo $this->lang->line('i_posted_to'); ?> <?php echo $item->get_feed_domain()?></p>
 	<h2><?php echo $item->get_title()?></h2>
 	<p><a href="<?php echo $item->get_original_permalink()?>"><?php echo $item->get_original_permalink()?></a></p>
 	<?php if ($item->has_content()): ?>
@@ -34,7 +36,7 @@
 </div>
 
             <div id="comments_container">
-	        Your favourite external commenting service goes here!  I recommend <a href="http://www.disqus.com">http://www.disqus.com</a>
+            <?php echo $this->lang->line('comment_recommendation'); ?>
             </div>
 
 </div>

@@ -1,8 +1,8 @@
+<?php $this->lang->load('lifepress'); ?>
+
 <div id="main_container">
     <div id="single_container" class="page">
-
-	I recommend <a href="http://www.wufoo.com">www.wufoo.com</a> to create a contact form and paste it here!
-       
+    <?php echo $this->lang->line('contactform_recommendation'); ?>
     </div>
 </div>
 <?php $this->load->view('themes/'.$this->config->item('theme').'/_sidebar')?>
