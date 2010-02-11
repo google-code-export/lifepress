@@ -1,3 +1,5 @@
+<?php $this->lang->load('lifepress'); ?>
+
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
         "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
@@ -23,8 +25,8 @@
 		<div class="center_box">
 	
 			<ul id="navigation">
-				<li<?php if (!$this->uri->segment(1) || $this->uri->segment(1) == 'items' || $this->uri->segment(1) == 'page'): ?> class="current"<?php endif; ?>><a href="<?php echo $this->config->item('base_url')?>" title="My Lifestream">Lifestream</a></li>
-				<li<?php if ($this->uri->segment(2) == 'contact'): ?> class="current"<?php endif; ?>><a href="<?php echo $this->config->item('base_url')?>p/contact/" title="Contact Me">Contact</a></li>
+				<li<?php if (!$this->uri->segment(1) || $this->uri->segment(1) == 'items' || $this->uri->segment(1) == 'page'): ?> class="current"<?php endif; ?>><a href="<?php echo $this->config->item('base_url')?>" title="<?php echo $this->lang->line('my_lifestream'); ?>"><?php echo $this->lang->line('lifestream'); ?></a></li>
+				<li<?php if ($this->uri->segment(2) == 'contact'): ?> class="current"<?php endif; ?>><a href="<?php echo $this->config->item('base_url')?>p/contact/" title="<?php echo $this->lang->line('contact_me'); ?>"><?php echo $this->lang->line('contact'); ?></a></li>
 			</ul>
 			<h1><a href="<?php echo $this->config->item('base_url')?>"><?php echo $this->config->item('lifestream_title')?></a></h1>
 		</div>

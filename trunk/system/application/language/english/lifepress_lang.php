@@ -11,5 +11,9 @@ $lang['search'] = "Search";
 $lang['search_submit'] = "Go";
 $lang['popular_tags'] = "Popular Tags";
 $lang['explanation'] = "Blogs are evolving.  You're looking at my <strong>Lifestream</strong>, a real-time flow of my activity across various websites, with the occasional blog post for nourishment.";
+$lang['lifestream'] = "Lifestream";
+$lang['my_lifestream'] = "My Lifestream";
+$lang['contact'] = "Contact";
+$lang['contact_me'] = "Contact me";
 
 ?>
