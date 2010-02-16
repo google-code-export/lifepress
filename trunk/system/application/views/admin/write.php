@@ -16,6 +16,10 @@
 <p><label class="title" for="content_input">Content</label>
 <textarea id="content_input" class="text_input" name="content"><?php if (!$_POST && isset($item)): echo $item->item_content; else: echo $this->input->post('content'); endif;?></textarea></p>
 
+<p><label class="title" for="wmd-preview">Preview</label>
+<div class="wmd-preview"></div>
+</p>
+
 <p><label class="title" for="tag_input">Tags</label>
 <input id="tag_input" type="text" class="text_input" name="tags" value="<?php if (!$_POST && isset($tag_string)): echo $tag_string; else: echo $this->input->post('tags'); endif;?>" /></p>
 <span class="input_explain">Separate with commas e.g. these, are, my, tags</span></p>
@@ -65,3 +69,5 @@
 <p class="tip"><strong>Shorthand</strong><br />The blog post content area supports the <a href="http://daringfireball.net/projects/markdown/syntax" rel="external">Markdown</a> method of shorthand markup.</p>
 
 </div>
+
+<script type="text/javascript" src="wmd/wmd.js"></script>
