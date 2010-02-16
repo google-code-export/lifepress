@@ -17,7 +17,7 @@
 <textarea id="content_input" class="text_input" name="content"><?php if (!$_POST && isset($item)): echo $item->item_content; else: echo $this->input->post('content'); endif;?></textarea></p>
 
 <p><label class="title" for="wmd-preview">Preview</label>
-<div class="wmd-preview"></div>
+<div class="wmd-preview" id="wmd-preview" name="wmd-preview"></div>
 </p>
 
 <p><label class="title" for="tag_input">Tags</label>
