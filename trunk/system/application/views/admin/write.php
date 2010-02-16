@@ -70,4 +70,4 @@
 
 </div>
 
-<script type="text/javascript" src="wmd/wmd.js"></script>
+<script type="text/javascript" src="/system/application/views/admin/wmd/wmd.js"></script>
