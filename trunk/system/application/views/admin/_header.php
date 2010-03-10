@@ -5,7 +5,7 @@
 <head>
 	<meta http-equiv="content-type" content="text/html;charset=utf-8" />
 	<meta http-equiv="Content-Style-Type" content="text/css" />
-	<title><?php echo $page_name?> &rsaquo; Sweetcron Admin Panel</title>
+	<title><?php echo $page_name?> &rsaquo; Lifepress Admin Panel</title>
 	<link rel="shortcut icon" href="<?php echo $this->config->item('base_url')?>favicon.ico" type="image/x-icon" />
 	<link rel="stylesheet" href="<?php echo $this->config->item('base_url')?>public/css/admin.css" type="text/css" media="all" />
 	<script type="text/javascript" src="<?php echo $this->config->item('base_url')?>public/scripts/jquery.js"></script>
@@ -20,13 +20,13 @@
 
 <div id="user_info">
 	<?php if (!isset($this->auth)): ?>
-	<h1>Welcome to Sweetcron</h1>
+	<h1>Welcome to Lifepress</h1>
     <p>Installation - Step 1 of 1</a></p>	
     <?php elseif ($this->auth->is_logged()): ?>
 	<h1><?php echo $this->config->item('lifestream_title')?></h1>
     <p>Logged in as <?php echo $this->data->user->user_login?> | <a href="<?php echo $this->config->item('base_url')?>admin/login/bye">logout?</a></p>
     <?php else: ?>
-	<h1>Welcome to Sweetcron</h1>
+	<h1>Welcome to Lifepress</h1>
     <p>Please log in</p>
     <?php endif; ?>
 </div>
