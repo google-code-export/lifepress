@@ -1,4 +1,4 @@
-<?php  if ( ! defined('BASEPATH')) exit('No direct script access allowed');
+<?php  if (!defined('BASEPATH')) exit('No direct script access allowed');
 /*
 | -------------------------------------------------------------------
 | AUTO-LOADER
@@ -39,7 +39,7 @@
 |	$autoload['libraries'] = array('database', 'session', 'xmlrpc');
 */
 
-$autoload['libraries'] = array();
+$autoload['libraries'] = array('database', 'session');
 
 
 /*
@@ -111,6 +111,15 @@ $autoload['language'] = array();
 $autoload['model'] = array();
 
 
+/*
+| -------------------------------------------------------------------
+|  Auto-load Core Libraries
+| -------------------------------------------------------------------
+|
+| DEPRECATED:  Use $autoload['libraries'] above instead.
+|
+*/
+// $autoload['core'] = array();
 
-/* End of file autoload.php */
-/* Location: ./system/application/config/autoload.php */
+
+?>

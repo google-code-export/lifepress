@@ -38,7 +38,8 @@ class Sweetcron {
 	
     function __construct() {
     	$this->CI =& get_instance();
-    	$this->CI->config->set_item('sweetcron_version', '1.08e');
+    	$this->CI->config->set_item('lifepress_release', 'Heathcliff');
+    	$this->CI->config->set_item('sweetcron_version', '0.1');
     }
 	
 	function fetch_items()

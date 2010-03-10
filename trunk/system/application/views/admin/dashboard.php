@@ -21,7 +21,7 @@
 
 <p class="tip"><strong>Greetings!</strong><br />This page shows the last 5 public items in your lifestream.</p>
 
-<h4 class="side_title">Your Sweetcron Stats</h4>
+<h4 class="side_title">Your Lifepress Stats</h4>
 <ul class="generic">
 	<li>Public Items: <span class="highlight"><?php echo $item_count?></span></li>
 	<li>Feeds: <span class="highlight"><?php echo $feed_count?></span></li>
